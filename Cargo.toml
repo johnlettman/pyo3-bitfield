@@ -1,0 +1,18 @@
+[package]
+name = "pyo3-modular-bitfield"
+version = "0.0.1"
+authors = ["John Lettman <the@johnlettman.com>"]
+description = "A quick derive macro to generate `pyo3` getters and setters for `modular_bitfield` structs."
+keywords = ["proc_macro", "procmacro", "pyo3", "modular-bitfield"]
+edition = "2018"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+quote = "1"
+proc-macro2 = "1.0"
+syn = "2.0.72"
+
+[dev-dependencies]
+macrotest = "1"

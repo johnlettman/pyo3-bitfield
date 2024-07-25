@@ -1,0 +1,6 @@
+max_width = 150
+group_imports = "StdExternalCrate"
+
+brace_style = "SameLineWhere"
+format_code_in_doc_comments = true
+use_small_heuristics = "Max"
