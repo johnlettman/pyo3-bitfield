@@ -1,15 +1,31 @@
 [package]
-name = "pyo3-modular-bitfield"
-version = "0.0.1"
-authors = ["John Lettman <the@johnlettman.com>"]
-description = "A quick derive macro to generate `pyo3` getters and setters for `modular_bitfield` structs."
-keywords = ["proc_macro", "procmacro", "pyo3", "modular-bitfield"]
-edition = "2018"
+name = "pyo3-bitfield"
+authors = ["John P. Lettman"]
+version.workspace = true
+description.workspace = true
+documentation.workspace = true
+edition.workspace = true
+keywords.workspace = true
+license-file.workspace = true
+readme.workspace = true
+repository.workspace = true
 
-[lib]
-proc-macro = true
+[workspace]
+members = ["pyo3-bitfield-impl"]
+
+[workspace.package]
+version = "0.1.0"
+categories = ["data-structures", "development-tools::ffi", "rust-patterns"]
+description = "Generate pyo3 implementations of bitsized types."
+edition = "2018"
+keywords = ["pyo3", "modular-bitfield"]
+license-file = "LICENSE"
+readme = "README.md"
+repository = "https://github.com/johnlettman/pyo3-bitfield"
+documentation = ""
 
 [dependencies]
+pyo3-bitfield-impl = {  path = "pyo3-bitfield-impl" }
 quote = "1"
 proc-macro2 = "1.0"
 syn = "2.0.72"

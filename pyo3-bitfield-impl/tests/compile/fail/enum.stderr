@@ -1,0 +1,8 @@
+error: item is not a struct
+
+         = help: `#[derive(PyBitfield)]` only supports structs
+
+ --> tests/compile/fail/enum.rs:5:6
+  |
+5 | enum TestEnum {
+  |      ^^^^^^^^
